@@ -306,7 +306,7 @@ REDO:
 				try {
 					{
 						const auto message_lifetime = v->get_statusline().show_message_until_finished(
-							_("Marking feed read..."));
+								_("Marking feed read..."));
 						v->get_ctrl()->mark_all_read(pos);
 						do_redraw = true;
 					}

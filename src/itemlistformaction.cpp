@@ -489,7 +489,7 @@ bool ItemListFormAction::process_operation(Operation op,
 			LOG(Level::INFO, "ItemListFormAction: marking feed read");
 			try {
 				const auto message_lifetime = v->get_statusline().show_message_until_finished(
-					_("Marking feed read..."));
+						_("Marking feed read..."));
 				std::vector<std::string> guids;
 				for (const auto& item : visible_items) {
 					const std::string guid = item.first->guid();
